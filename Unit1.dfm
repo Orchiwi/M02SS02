@@ -120,6 +120,14 @@ object Form1: TForm1
     Height = 25
     Caption = 'Envoyer'
     TabOrder = 9
-    OnClick = Button1Click
+    OnClick = ScrollBar1Change
+  end
+  object Edit1: TEdit
+    Left = 24
+    Top = 408
+    Width = 198
+    Height = 21
+    TabOrder = 10
+    Text = '172.20.21.17'
   end
 end
