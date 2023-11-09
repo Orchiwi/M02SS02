@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/11/09 10:51:52.188,=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/09 10:51:52.202,=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2023/11/09 10:52:08.634,C:\Users\amorlet\Documents\code\module 2\application graphique\Unit1.h=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.h</Transaction>
+    <Transaction>2023/11/09 10:52:08.634,C:\Users\amorlet\Documents\code\module 2\application graphique\Unit1.cpp=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2023/11/09 10:52:08.634,C:\Users\amorlet\Documents\code\module 2\application graphique\Unit1.dfm=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.dfm</Transaction>
+    <Transaction>2023/11/09 10:52:13.880,C:\Users\amorlet\Documents\code\module 2\application graphique\Project1PCH1.h=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/09 10:52:16.918,C:\Users\amorlet\Documents\code\module 2\application graphique\Project1.cbproj=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
