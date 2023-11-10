@@ -35,6 +35,7 @@ object Form1: TForm1
     PageSize = 0
     Position = 255
     TabOrder = 1
+    OnChange = ScrollBar2Change
   end
   object ScrollBar3: TScrollBar
     Left = 70
@@ -46,6 +47,7 @@ object Form1: TForm1
     PageSize = 0
     Position = 255
     TabOrder = 2
+    OnChange = ScrollBar3Change
   end
   object cc: TScrollBar
     Left = 93
@@ -57,6 +59,7 @@ object Form1: TForm1
     PageSize = 0
     Position = 255
     TabOrder = 3
+    OnChange = ccChange
   end
   object ScrollBar5: TScrollBar
     Left = 116
@@ -68,6 +71,7 @@ object Form1: TForm1
     PageSize = 0
     Position = 255
     TabOrder = 4
+    OnChange = ScrollBar5Change
   end
   object ScrollBar4: TScrollBar
     Left = 136
@@ -79,6 +83,7 @@ object Form1: TForm1
     PageSize = 0
     Position = 255
     TabOrder = 5
+    OnChange = ScrollBar4Change
   end
   object ScrollBar6: TScrollBar
     Left = 159
@@ -90,6 +95,7 @@ object Form1: TForm1
     PageSize = 0
     Position = 255
     TabOrder = 6
+    OnChange = ScrollBar6Change
   end
   object ScrollBar7: TScrollBar
     Left = 182
@@ -101,6 +107,7 @@ object Form1: TForm1
     PageSize = 0
     Position = 255
     TabOrder = 7
+    OnChange = ScrollBar7Change
   end
   object ScrollBar8: TScrollBar
     Left = 205
@@ -112,14 +119,23 @@ object Form1: TForm1
     PageSize = 0
     Position = 255
     TabOrder = 8
+    OnChange = ScrollBar8Change
   end
   object Button1: TButton
     Left = 24
-    Top = 360
+    Top = 368
     Width = 198
     Height = 25
     Caption = 'Envoyer'
     TabOrder = 9
     OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Left = 55
+    Top = 408
+    Width = 121
+    Height = 21
+    TabOrder = 10
+    Text = 'Edit1'
   end
 end

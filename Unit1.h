@@ -22,8 +22,17 @@ __published:	// Composants gérés par l'EDI
 	TScrollBar *ScrollBar7;
 	TScrollBar *ScrollBar8;
 	TButton *Button1;
+	TEdit *Edit1;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall ScrollBar1Change(TObject *Sender);
+	void __fastcall ScrollBar2Change(TObject *Sender);
+	void __fastcall ScrollBar3Change(TObject *Sender);
+	void __fastcall ccChange(TObject *Sender);
+	void __fastcall ScrollBar5Change(TObject *Sender);
+	void __fastcall ScrollBar4Change(TObject *Sender);
+	void __fastcall ScrollBar6Change(TObject *Sender);
+	void __fastcall ScrollBar7Change(TObject *Sender);
+	void __fastcall ScrollBar8Change(TObject *Sender);
 private:	// Déclarations utilisateur
 	DMXTCP monDMXTCP;
 public:		// Déclarations utilisateur
