@@ -22,7 +22,6 @@ __published:	// Composants gérés par l'EDI
 	TScrollBar *ScrollBar7;
 	TScrollBar *ScrollBar8;
 	TButton *Button1;
-	TEdit *Edit1;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall ScrollBar1Change(TObject *Sender);
 private:	// Déclarations utilisateur
