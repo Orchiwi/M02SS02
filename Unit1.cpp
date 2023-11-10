@@ -32,31 +32,26 @@ void __fastcall TForm1::ScrollBar1Change(TObject *Sender)
 
 void __fastcall TForm1::ScrollBar2Change(TObject *Sender)
 {
-		monDMXTCP.ModifierCanal(1,255-ScrollBar1->Position);
+		monDMXTCP.ModifierCanal(1,255-ScrollBar2->Position);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::ScrollBar3Change(TObject *Sender)
 {
-monDMXTCP.ModifierCanal(1,255-ScrollBar2->Position);
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::ccChange(TObject *Sender)
-{
 monDMXTCP.ModifierCanal(1,255-ScrollBar3->Position);
 }
 //---------------------------------------------------------------------------
 
+
 void __fastcall TForm1::ScrollBar5Change(TObject *Sender)
 {
-monDMXTCP.ModifierCanal(1,255-ScrollBar4->Position);
+monDMXTCP.ModifierCanal(1,255-ScrollBar5->Position);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::ScrollBar4Change(TObject *Sender)
 {
-monDMXTCP.ModifierCanal(1,255-ScrollBar5->Position);
+monDMXTCP.ModifierCanal(1,255-ScrollBar4->Position);
 }
 //---------------------------------------------------------------------------
 

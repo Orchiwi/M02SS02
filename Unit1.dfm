@@ -59,7 +59,6 @@ object Form1: TForm1
     PageSize = 0
     Position = 255
     TabOrder = 3
-    OnChange = ccChange
   end
   object ScrollBar5: TScrollBar
     Left = 116
@@ -136,6 +135,6 @@ object Form1: TForm1
     Width = 121
     Height = 21
     TabOrder = 10
-    Text = 'Edit1'
+    Text = '172.20.21.17'
   end
 end

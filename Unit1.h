@@ -27,7 +27,6 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall ScrollBar1Change(TObject *Sender);
 	void __fastcall ScrollBar2Change(TObject *Sender);
 	void __fastcall ScrollBar3Change(TObject *Sender);
-	void __fastcall ccChange(TObject *Sender);
 	void __fastcall ScrollBar5Change(TObject *Sender);
 	void __fastcall ScrollBar4Change(TObject *Sender);
 	void __fastcall ScrollBar6Change(TObject *Sender);
