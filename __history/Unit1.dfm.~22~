@@ -1,0 +1,173 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'DMXTCP'
+  ClientHeight = 465
+  ClientWidth = 400
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ScrollBar1: TScrollBar
+    Left = 21
+    Top = 8
+    Width = 17
+    Height = 337
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 255
+    TabOrder = 0
+    OnChange = ScrollBar1Change
+  end
+  object ScrollBar2: TScrollBar
+    Left = 44
+    Top = 8
+    Width = 17
+    Height = 337
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 255
+    TabOrder = 1
+    OnChange = ScrollBar2Change
+  end
+  object ScrollBar3: TScrollBar
+    Left = 67
+    Top = 8
+    Width = 17
+    Height = 337
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 255
+    TabOrder = 2
+    OnChange = ScrollBar3Change
+  end
+  object cc: TScrollBar
+    Left = 90
+    Top = 8
+    Width = 17
+    Height = 337
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 255
+    TabOrder = 3
+  end
+  object ScrollBar5: TScrollBar
+    Left = 113
+    Top = 8
+    Width = 17
+    Height = 337
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 255
+    TabOrder = 4
+    OnChange = ScrollBar5Change
+  end
+  object ScrollBar4: TScrollBar
+    Left = 136
+    Top = 8
+    Width = 17
+    Height = 337
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 255
+    TabOrder = 5
+    OnChange = ScrollBar4Change
+  end
+  object ScrollBar6: TScrollBar
+    Left = 159
+    Top = 8
+    Width = 17
+    Height = 337
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 255
+    TabOrder = 6
+    OnChange = ScrollBar6Change
+  end
+  object ScrollBar7: TScrollBar
+    Left = 182
+    Top = 8
+    Width = 17
+    Height = 337
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 255
+    TabOrder = 7
+    OnChange = ScrollBar7Change
+  end
+  object ScrollBar8: TScrollBar
+    Left = 205
+    Top = 8
+    Width = 17
+    Height = 337
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 255
+    TabOrder = 8
+    OnChange = ScrollBar8Change
+  end
+  object Button1: TButton
+    Left = 21
+    Top = 368
+    Width = 201
+    Height = 25
+    Caption = 'Envoyer'
+    TabOrder = 9
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Left = 55
+    Top = 408
+    Width = 121
+    Height = 21
+    TabOrder = 10
+    Text = '172.20.21.17'
+  end
+  object FullOff: TButton
+    Left = 296
+    Top = 48
+    Width = 75
+    Height = 25
+    Caption = 'FullOff'
+    TabOrder = 11
+    OnClick = FullOffClick
+  end
+  object FullOn: TButton
+    Left = 296
+    Top = 96
+    Width = 75
+    Height = 25
+    Caption = 'FullOn'
+    TabOrder = 12
+    OnClick = FullOnClick
+  end
+  object Demo: TButton
+    Left = 296
+    Top = 144
+    Width = 75
+    Height = 25
+    Caption = 'Demo'
+    TabOrder = 13
+    OnClick = DemoClick
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 312
+    Top = 224
+  end
+end

@@ -1,0 +1,30 @@
+#include <vcl.h>
+
+const int NombreDeBarresDeDefilement = 3; // Mettez à jour avec le nombre de barres de défilement que vous avez
+
+// Tableau de barres de défilement
+TScrollBar* BarresDeDefilement[NombreDeBarresDeDefilement] = {nullptr};
+
+// Initialiser le tableau dans le constructeur du formulaire
+__fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner)
+{
+    // Assurez-vous d'assigner les barres de défilement appropriées dans le tableau
+    BarresDeDefilement[0] = ScrollBar1;
+    BarresDeDefilement[1] = ScrollBar2;
+    BarresDeDefilement[2] = ScrollBar3;
+}
+
+// Fonction pour fixer la position de toutes les barres de défilement
+void FixerPositionBarresDeDefilement(int nouvellePosition)
+{
+    // Parcourir toutes les barres de défilement dans le tableau
+    for (int i = 0; i < NombreDeBarresDeDefilement; ++i)
+    {
+        // Assurez-vous que la nouvelle position est dans la plage valide
+        if (nouvellePosition >= BarresDeDefilement[i]->Min && nouvellePosition <= BarresDeDefilement[i]->Max)
+        {
+            // Fixer la nouvelle position de la barre de défilement
+            BarresDeDefilement[i]->Position = nouvellePosition;
+        }
+    }
+}

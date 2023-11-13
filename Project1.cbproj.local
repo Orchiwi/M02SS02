@@ -1,12 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2023/11/09 10:51:52.188,=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
-    <Transaction>2023/11/09 10:51:52.202,=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
-    <Transaction>2023/11/09 10:52:08.634,C:\Users\amorlet\Documents\code\module 2\application graphique\Unit1.h=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.h</Transaction>
-    <Transaction>2023/11/09 10:52:08.634,C:\Users\amorlet\Documents\code\module 2\application graphique\Unit1.cpp=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
-    <Transaction>2023/11/09 10:52:08.634,C:\Users\amorlet\Documents\code\module 2\application graphique\Unit1.dfm=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.dfm</Transaction>
-    <Transaction>2023/11/09 10:52:13.880,C:\Users\amorlet\Documents\code\module 2\application graphique\Project1PCH1.h=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
-    <Transaction>2023/11/09 10:52:16.918,C:\Users\amorlet\Documents\code\module 2\application graphique\Project1.cbproj=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+	<Transactions>
+    <Transaction>2023/11/09 10:51:52.000.188,=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/09 10:51:52.000.202,=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2023/11/09 10:52:08.000.634,C:\Users\amorlet\Documents\code\module 2\application graphique\Unit1.dfm=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.dfm</Transaction>
+    <Transaction>2023/11/09 10:52:08.000.634,C:\Users\amorlet\Documents\code\module 2\application graphique\Unit1.h=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.h</Transaction>
+    <Transaction>2023/11/09 10:52:08.000.634,C:\Users\amorlet\Documents\code\module 2\application graphique\Unit1.cpp=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2023/11/09 10:52:13.000.880,C:\Users\amorlet\Documents\code\module 2\application graphique\Project1PCH1.h=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/09 10:52:16.000.918,C:\Users\amorlet\Documents\code\module 2\application graphique\Project1.cbproj=C:\Users\amorlet\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+    <Transaction>2023/11/10 23:13:02.000.349,=M:\TS1\Code\Projet embarcadero\DMX application graphique\DMXTCP.cpp</Transaction>
+    <Transaction>2023/11/10 23:13:07.000.261,=M:\TS1\Code\Projet embarcadero\DMX application graphique\DMXTCP.h</Transaction>
+    <Transaction>2023/11/10 23:13:10.000.800,=M:\TS1\Code\Projet embarcadero\DMX application graphique\IRClientTCP.cpp</Transaction>
+    <Transaction>2023/11/10 23:13:14.000.099,=M:\TS1\Code\Projet embarcadero\DMX application graphique\IRClientTCP.h</Transaction>
+    <Transaction>2023/11/10 23:16:03.000.544,=M:\TS1\Code\Projet embarcadero\DMX application graphique\Unit2.cpp</Transaction>
+    <Transaction>2023/11/13 21:36:44.000.854,=M:\TS1\Code\Projet embarcadero\DMX application graphique\FixScroll.cpp</Transaction>
+    <Transaction>2023/11/13 21:41:06.000.764,M:\TS1\Code\Projet embarcadero\DMX application graphique\FixScroll.cpp=</Transaction>
   </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="DMXTCP.cpp"/>
+    <File Path="DMXTCP.h"/>
+    <File Path="IRClientTCP.cpp"/>
+    <File Path="IRClientTCP.h"/>
+    <File Path="Project1.cpp"/>
+    <File Path="Project1PCH1.h"/>
+    <File Path="Unit1.cpp"/>
+    <File Path="Unit1.cpp"/>
+    <File Path="Unit1.dfm"/>
+    <File Path="Unit1.h"/>
+  </ProjectSortOrder>
 </BorlandProject>

@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'DMXTCP'
-  ClientHeight = 448
-  ClientWidth = 267
+  ClientHeight = 465
+  ClientWidth = 400
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,7 +14,7 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object ScrollBar1: TScrollBar
-    Left = 24
+    Left = 21
     Top = 8
     Width = 17
     Height = 337
@@ -26,7 +26,7 @@ object Form1: TForm1
     OnChange = ScrollBar1Change
   end
   object ScrollBar2: TScrollBar
-    Left = 47
+    Left = 44
     Top = 8
     Width = 17
     Height = 337
@@ -38,7 +38,7 @@ object Form1: TForm1
     OnChange = ScrollBar2Change
   end
   object ScrollBar3: TScrollBar
-    Left = 70
+    Left = 67
     Top = 8
     Width = 17
     Height = 337
@@ -50,7 +50,7 @@ object Form1: TForm1
     OnChange = ScrollBar3Change
   end
   object cc: TScrollBar
-    Left = 93
+    Left = 90
     Top = 8
     Width = 17
     Height = 337
@@ -61,7 +61,7 @@ object Form1: TForm1
     TabOrder = 3
   end
   object ScrollBar5: TScrollBar
-    Left = 116
+    Left = 113
     Top = 8
     Width = 17
     Height = 337
@@ -121,9 +121,9 @@ object Form1: TForm1
     OnChange = ScrollBar8Change
   end
   object Button1: TButton
-    Left = 24
+    Left = 21
     Top = 368
-    Width = 198
+    Width = 201
     Height = 25
     Caption = 'Envoyer'
     TabOrder = 9
@@ -136,5 +136,38 @@ object Form1: TForm1
     Height = 21
     TabOrder = 10
     Text = '172.20.21.17'
+  end
+  object FullOff: TButton
+    Left = 296
+    Top = 48
+    Width = 75
+    Height = 25
+    Caption = 'FullOff'
+    TabOrder = 11
+    OnClick = FullOffClick
+  end
+  object FullOn: TButton
+    Left = 296
+    Top = 96
+    Width = 75
+    Height = 25
+    Caption = 'FullOn'
+    TabOrder = 12
+    OnClick = FullOnClick
+  end
+  object Demo: TButton
+    Left = 296
+    Top = 144
+    Width = 75
+    Height = 25
+    Caption = 'Stop'
+    TabOrder = 13
+    OnClick = DemoClick
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 312
+    Top = 224
   end
 end

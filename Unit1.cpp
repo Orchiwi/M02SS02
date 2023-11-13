@@ -32,44 +32,80 @@ void __fastcall TForm1::ScrollBar1Change(TObject *Sender)
 
 void __fastcall TForm1::ScrollBar2Change(TObject *Sender)
 {
-		monDMXTCP.ModifierCanal(1,255-ScrollBar2->Position);
+		monDMXTCP.ModifierCanal(2,255-ScrollBar2->Position);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::ScrollBar3Change(TObject *Sender)
 {
-monDMXTCP.ModifierCanal(1,255-ScrollBar3->Position);
+	monDMXTCP.ModifierCanal(3,255-ScrollBar3->Position);
 }
 //---------------------------------------------------------------------------
 
 
 void __fastcall TForm1::ScrollBar5Change(TObject *Sender)
 {
-monDMXTCP.ModifierCanal(1,255-ScrollBar5->Position);
+	monDMXTCP.ModifierCanal(5,255-ScrollBar5->Position);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::ScrollBar4Change(TObject *Sender)
 {
-monDMXTCP.ModifierCanal(1,255-ScrollBar4->Position);
+	monDMXTCP.ModifierCanal(4,255-ScrollBar4->Position);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::ScrollBar6Change(TObject *Sender)
 {
-monDMXTCP.ModifierCanal(1,255-ScrollBar6->Position);
+	monDMXTCP.ModifierCanal(6,255-ScrollBar6->Position);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::ScrollBar7Change(TObject *Sender)
 {
-monDMXTCP.ModifierCanal(1,255-ScrollBar7->Position);
+	monDMXTCP.ModifierCanal(7,255-ScrollBar7->Position);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::ScrollBar8Change(TObject *Sender)
 {
-monDMXTCP.ModifierCanal(1,255-ScrollBar8->Position);
+	monDMXTCP.ModifierCanal(8,255-ScrollBar8->Position);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::FullOffClick(TObject *Sender)
+{
+	monDMXTCP.FullOff();
+	monDMXTCP.Envoyer((AnsiString(Edit1->Text).c_str()),4123);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::FullOnClick(TObject *Sender)
+{
+	monDMXTCP.FullOn();
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::DemoClick(TObject *Sender)
+{
+	if (Demo->Caption == "Demo") {
+
+	Demo->Caption = "Stop";
+	Timer1->Enabled = false;
+		}
+	else if (Demo->Caption == "Stop" ) {
+	Demo->Caption = "Demo";
+	Timer1->Enabled = true;
+
+		 };
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Timer1Timer(TObject *Sender)
+{
+	monDMXTCP.Demonstration();
+	monDMXTCP.Envoyer((AnsiString(Edit1->Text).c_str()),4123);
 }
 //---------------------------------------------------------------------------
 
