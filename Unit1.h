@@ -9,6 +9,9 @@
 #include <Vcl.Forms.hpp>
 #include "DMXTCP.h"
 #include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Imaging.jpeg.hpp>
+#include <Vcl.Buttons.hpp>
+#include <Vcl.ComCtrls.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -16,7 +19,6 @@ __published:	// Composants gérés par l'EDI
 	TScrollBar *ScrollBar1;
 	TScrollBar *ScrollBar2;
 	TScrollBar *ScrollBar3;
-	TScrollBar *cc;
 	TScrollBar *ScrollBar5;
 	TScrollBar *ScrollBar4;
 	TScrollBar *ScrollBar6;
@@ -28,6 +30,27 @@ __published:	// Composants gérés par l'EDI
 	TButton *FullOn;
 	TButton *Demo;
 	TTimer *Timer1;
+	TSpeedButton *Point;
+	TSpeedButton *rondtorsade;
+	TSpeedButton *rondraye;
+	TSpeedButton *fleur;
+	TSpeedButton *brioche;
+	TSpeedButton *douche;
+	TSpeedButton *pissenlit;
+	TSpeedButton *beach;
+	TSpeedButton *badge;
+	TSpeedButton *metal;
+	TSpeedButton *violet;
+	TSpeedButton *rouge;
+	TSpeedButton *vert;
+	TSpeedButton *bleu;
+	TSpeedButton *blanc;
+	TTrackBar *TrackBar1;
+	TStaticText *StaticText3;
+	TTrackBar *TrackBar2;
+	TStaticText *StaticText1;
+	TTrackBar *TrackBar3;
+	TStaticText *StaticText2;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall ScrollBar1Change(TObject *Sender);
 	void __fastcall ScrollBar2Change(TObject *Sender);
@@ -41,6 +64,24 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall FullOnClick(TObject *Sender);
 	void __fastcall DemoClick(TObject *Sender);
 	void __fastcall Timer1Timer(TObject *Sender);
+	void __fastcall PointClick(TObject *Sender);
+	void __fastcall violetClick(TObject *Sender);
+	void __fastcall rougeClick(TObject *Sender);
+	void __fastcall vertClick(TObject *Sender);
+	void __fastcall bleuClick(TObject *Sender);
+	void __fastcall blancClick(TObject *Sender);
+	void __fastcall rondtorsadeClick(TObject *Sender);
+	void __fastcall rondrayeClick(TObject *Sender);
+	void __fastcall fleurClick(TObject *Sender);
+	void __fastcall briocheClick(TObject *Sender);
+	void __fastcall doucheClick(TObject *Sender);
+	void __fastcall pissenlitClick(TObject *Sender);
+	void __fastcall beachClick(TObject *Sender);
+	void __fastcall badgeClick(TObject *Sender);
+	void __fastcall metalClick(TObject *Sender);
+	void __fastcall TrackBar3Change(TObject *Sender);
+	void __fastcall TrackBar2Change(TObject *Sender);
+	void __fastcall TrackBar1Change(TObject *Sender);
 private:	// Déclarations utilisateur
 	DMXTCP monDMXTCP;
 public:		// Déclarations utilisateur
