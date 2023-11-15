@@ -273,3 +273,44 @@ void __fastcall TForm1::TrackBar1Change(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+
+
+
+void __fastcall TForm1::Image1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = 1;
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Image1MouseUp(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = 0;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift, int X,
+          int Y)
+{
+	if (click == 1) {
+		Image1->Left += X - Image1->Width/2;
+		Image1->Top += Y - Image1->Height/2;
+	};
+	if (Image1->Left < Bevel1->Left) {
+		Image1->Left = Bevel1->Left;
+	};
+	if (Image1->Top < Bevel1->Top) {
+		Image1->Top = Bevel1->Top;
+	};
+	if (Image1->Left > Bevel1->Left + Bevel1->Width - Image1->Width) {
+		Image1->Left = Bevel1->Left + Bevel1->Width - Image1->Width;
+	};
+	if (Image1->Top > Bevel1->Top + Bevel1->Height - Image1->Height) {
+		Image1->Top = Bevel1->Top + Bevel1->Height - Image1->Height;
+	};
+	ScrollBar1->Position = 0 + Image1->Width - Bevel1->Left + Image1->Left   ;
+}
+//---------------------------------------------------------------------------
+

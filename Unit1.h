@@ -12,6 +12,7 @@
 #include <Vcl.Imaging.jpeg.hpp>
 #include <Vcl.Buttons.hpp>
 #include <Vcl.ComCtrls.hpp>
+#include <Vcl.Graphics.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -51,6 +52,8 @@ __published:	// Composants gérés par l'EDI
 	TStaticText *StaticText1;
 	TTrackBar *TrackBar3;
 	TStaticText *StaticText2;
+	TBevel *Bevel1;
+	TImage *Image1;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall ScrollBar1Change(TObject *Sender);
 	void __fastcall ScrollBar2Change(TObject *Sender);
@@ -82,8 +85,17 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall TrackBar3Change(TObject *Sender);
 	void __fastcall TrackBar2Change(TObject *Sender);
 	void __fastcall TrackBar1Change(TObject *Sender);
+	void __fastcall Image1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+		  int X, int Y);
+	void __fastcall Image1MouseUp(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y);
+	void __fastcall Image1MouseMove(TObject *Sender, TShiftState Shift, int X, int Y);
+
+
+
 private:	// Déclarations utilisateur
 	DMXTCP monDMXTCP;
+	bool click;
 public:		// Déclarations utilisateur
 	__fastcall TForm1(TComponent* Owner);
 };
