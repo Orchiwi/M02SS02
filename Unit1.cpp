@@ -297,7 +297,7 @@ void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift, int 
 	if (click == 1) {
 		Image1->Left += X - Image1->Width/2;
 		Image1->Top += Y - Image1->Height/2;
-	};
+
 	if (Image1->Left < Bevel1->Left) {
 		Image1->Left = Bevel1->Left;
 	};
@@ -310,7 +310,10 @@ void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift, int 
 	if (Image1->Top > Bevel1->Top + Bevel1->Height - Image1->Height) {
 		Image1->Top = Bevel1->Top + Bevel1->Height - Image1->Height;
 	};
-	ScrollBar1->Position = 0 + Image1->Width - Bevel1->Left + Image1->Left   ;
+	ScrollBar1->Position = 0 - Bevel1->Left + Image1->Left;
+	ScrollBar2->Position = 0 - Bevel1->Top + Image1->Top;
+	monDMXTCP.Envoyer((AnsiString(Edit1->Text).c_str()),4123);
+    };
 }
 //---------------------------------------------------------------------------
 

@@ -3816,8 +3816,8 @@ object Form1: TForm1
   object Bevel1: TBevel
     Left = 693
     Top = 22
-    Width = 255
-    Height = 255
+    Width = 272
+    Height = 272
   end
   object Image1: TImage
     Left = 814
